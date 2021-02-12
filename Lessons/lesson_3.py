@@ -362,7 +362,58 @@
 #         l[i] += 1
 # print(l)
 
+# "Hello world!"
+# for i in "Hello world!":
+#     if i == 'o':
+#         break
+#     print(i * 2, end='')
 
+# while True:
+#     print("Type 'quit' to exit")
+#     phrase = input("Your message: ")
+#     if phrase == "quite":
+#         break
+#     elif phrase == "Hello" or phrase == "Hi":
+#         print("Hi! How's it going?")
+#     elif phrase == "What is your name?":
+#         print("I don't have name :(")
+#     else:
+#         print("I don't understand you ")
+
+# "Hello world!"
+# for i in "Hello world!":
+#     if i == 'a':
+#         break
+#     else:
+#         print("Буквы а в строке нет")
+
+# for i in "Hello world!":
+#     if i == 'o':
+#         continue
+#     print(i * 2, end='')
+
+# """
+# Попросите пользователя ввести слово (строка без пробелов).
+# Пока он не введёт правильно, просите его ввести.
+# """
+# while True:
+#     word = input("Enter word: ") .strip()
+#     if ' ' not in word:
+#         break
+
+# """
+# Шахматный ферзь ходит по диагонали, горизонтали или вертикали.
+# Даны две различные клетки шахматной доски, определите,
+# может ли ферзь попасть с первой клетки на вторую одним ходом.
+# """
+# x1 = int(input("Номер сроки для клетки 1: "))
+# y1 = int(input("Номер столбца для клетки 1: "))
+# x2 = int(input("Номер строки для клетки 2: "))
+# y2 = int(input("Номер столбца для клетки 2: "))
+# if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
+#     print("Да")
+# else:
+#     print("Нет")
 
 
 
