@@ -749,3 +749,83 @@
 # money_after = int(money_before * (100 + p) / 100)
 # print("The grn: ", money_after // 100, "The coins: ", money_after % 100)
 
+# """
+# Даны два целых числа A и B (при этом A ≤ B).
+# Выведите все числа от A до B включительно.
+# """
+# a = int(input("Enter some number: "))
+# b = int(input("Enter another number: "))
+# for i in range(a, b + 1):
+#     print(i)
+
+# """
+# Даны два целых числа A и В.
+# Выведите все числа от A до B включительно,
+# в порядке возрастания, если A < B,
+# или в порядке убывания в противном случае.
+# """
+# a = int(input("Enter some number: "))
+# b = int(input("Enter another number: "))
+# if a < b:
+#     for i in range(a, b + 1):
+#         print(i)
+# else:
+#     for i in range(a, b - 1, -1):
+#         print(i)
+
+# """
+# Даны два целых числа A и В, A>B.
+# Выведите все нечётные числа от A до B включительно, в порядке убывания.
+# В этой задаче можно обойтись без инструкции if.
+# """
+# a = int(input("Enter some number: "))
+# b = int(input("Enter another number: "))
+# for i in range(a - (a + 1) % 2, b - b %2, -2):
+#     print(i)
+
+# """
+# Дано 10 целых чисел. Вычислите их сумму.
+# Напишите программу, использующую наименьшее число переменных.
+# """
+# sum = 0
+# for i in range(10):
+#     number = int(input("Enter some number: "))
+#     sum += number
+#     print(sum)
+
+# """
+# Дано несколько чисел. Вычислите их сумму.
+# Сначала вводите количество чисел N, затем вводится ровно N целых чисел.
+# Какое наименьшее число переменных нужно для решения этой задачи?
+# """
+# n = int(input("Enter some number: "))
+# sum = 0
+# for i in range(n):
+#     sum += int(input("Enter number: "))
+#     print("The sum: ", sum)
+
+# """
+# По данному натуральному n вычислите сумму 13+23+33+…+n3.
+# """
+# n = int(input("Enter some number: "))
+# sum = 0
+# for i in range(1, n + 1):
+#     sum += i ** 3
+#     print(sum)
+
+# """
+# Факториалом числа n называется произведение 1 × 2 × … × n. Обозначение: n!.
+# По данному натуральному n вычислите значение n!.
+# Пользоваться математической библиотекой math в этой задаче запрещено.
+# """
+# res = 1
+# n = int(input("Enter some number: "))
+# for i in range(1, n + 1):
+#     res *= i
+# print(res)
+
+
+
+
+
+
