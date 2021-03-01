@@ -750,6 +750,44 @@
 # print("The grn: ", money_after // 100, "The coins: ", money_after % 100)
 
 # """
+# Дано несколько чисел. Вычислите их сумму.
+# Сначала вводите количество чисел N, затем вводится ровно N целых чисел.
+# Какое наименьшее число переменных нужно для решения этой задачи?
+# """
+# n = int(input("Enter some number: "))
+# sum = 0
+# for i in range(n):
+#     sum += int(input("Enter number: "))
+#     print("The sum: ", sum)
+
+# x = int(input("Enter some number: "))
+# if x < 0:
+#     x = -x
+# print(x)
+
+# for i in range(4):
+#     print(i)
+#     print(i ** 2)
+#     print("The end")
+
+# for i in 1, 2, 3, 'one', 'two', 'three':
+#     print(i)
+
+# sum = 0
+# n = 5
+# for i in range(1, n + 1):
+#     sum += i
+# print(sum)
+
+# print(1, 2, 3)
+# print(4, 5, 6)
+
+# print(1, 2, 3, sep=', ', end='. ')
+# print()
+# print(1, 2, 3, sep='', end=' -- ')
+# print(4, 5, 6, sep=' * ', end='.')
+
+# """
 # Даны два целых числа A и B (при этом A ≤ B).
 # Выведите все числа от A до B включительно.
 # """
@@ -759,10 +797,8 @@
 #     print(i)
 
 # """
-# Даны два целых числа A и В.
-# Выведите все числа от A до B включительно,
-# в порядке возрастания, если A < B,
-# или в порядке убывания в противном случае.
+# Даны два целых числа A и В. Выведите все числа от A до B включительно,
+# в порядке возрастания, если A < B, или в порядке убывания в противном случае.
 # """
 # a = int(input("Enter some number: "))
 # b = int(input("Enter another number: "))
@@ -780,18 +816,20 @@
 # """
 # a = int(input("Enter some number: "))
 # b = int(input("Enter another number: "))
-# for i in range(a - (a + 1) % 2, b - b %2, -2):
+# for i in range(a - (a + 1) % 2, b - b % 2, -2):
 #     print(i)
 
 # """
-# Дано 10 целых чисел. Вычислите их сумму.
+# Дано 10 целых чисел.
+# Вычислите их сумму.
 # Напишите программу, использующую наименьшее число переменных.
 # """
 # sum = 0
+#
 # for i in range(10):
 #     number = int(input("Enter some number: "))
 #     sum += number
-#     print(sum)
+# print(sum)
 
 # """
 # Дано несколько чисел. Вычислите их сумму.
@@ -824,8 +862,51 @@
 #     res *= i
 # print(res)
 
+# """
+# По данному натуральном nn вычислите сумму 1!+2!+3!+…+n!.
+# В решении этой задачи можно использовать только один цикл.
+# Пользоваться математической библиотекой math в этой задаче запрещено.
+# """
+# n = int(input("Enter some number: "))
+# partial_factorial = 1
+# partial_sum = 0
+# for i in range(1, n + 1):
+#     partial_factorial *= i
+#     partial_sum += partial_factorial
+# print(partial_sum)
 
+# """
+# Дано N чисел: сначала вводится число N,
+# затем вводится ровно N целых чисел.
+# Подсчитайте количество нулей среди введенных чисел и выведите это количество.
+# Вам нужно подсчитать количество чисел, равных нулю, а не количество цифр.
+# """
+# num_zeroes = 0
+# for i in range(int(input("Enter some number: "))):
+#     if int(input("Enter some number: ")) == 0:
+#         num_zeroes += 1
+# print(" Number zeroes: ", num_zeroes)
 
+# """
+# По данному натуральному n ≤ 9 выведите лесенку из n ступенек,
+# i-я ступенька состоит из чисел от 1 до i без пробелов.
+# """
+# n = int(input())
+# for i in range(1, n + 1):
+#     for j in range(1, i + 1):
+#         print(j, sep = '', end = '')
+#     print()
 
-
-
+"""
+Для настольной игры используются карточки с номерами от 1 до N. 
+Одна карточка потерялась. Найдите ее, зная номера оставшихся карточек.
+Дано число N, далее N − 1 номер оставшихся карточек (различные числа от 1 до N). 
+Программа должна вывести номер потерянной карточки.
+"""
+n = int(input())
+sum = 0
+for i in range(1, n + 1):
+    sum += i
+for i in range(n - 1):
+    sum -= int(input())
+print(sum)
